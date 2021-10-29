@@ -1,0 +1,172 @@
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-ExtraBold;
+    src: url(Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url(Poppins-SemiBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* min-height:1500px; */
+    background: #111111;
+    /* padding-bottom: 400px; */
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #111111, transparent);
+    z-index: 1000;
+}
+
+section:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background:#111111; */
+    z-index: 1000;
+    mix-blend-mode: color;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#text {
+    position: relative;
+    color: #fff;
+    font-size: 10em;
+    font-family: Poppins-Bold;
+    z-index: 1;
+    margin-bottom: 150px;
+}
+
+#land {
+    z-index: 2;
+}
+
+
+/* #heading{
+
+    position: relative;
+    color: #fff;
+    font-family: Poppins-Medium;
+    font-size:3em;
+} */
+
+
+/* section:before{
+
+    content:'HOPE';
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-family:Poppins-Bold;
+    font-size:16em;
+    color: transparent;
+    -webkit-text-stroke: 1px #555;
+
+} */
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+section h2 {
+    margin-left: 200px;
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: Poppins-Medium;
+    /* z-index: 5; */
+}
+
+section .container {
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .container .imgBx {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+}
+
+section .container .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .container .content {
+    position: absolute;
+    right: 0;
+    margin-top: 200px;
+    margin-bottom: 40px;
+    padding: 40px;
+    background: #333;
+    z-index: 1;
+    max-width: 400px;
+    color: #fff;
+    font-family: Poppins-Regular;
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+    border-bottom: 6px solid #fff;
+}
